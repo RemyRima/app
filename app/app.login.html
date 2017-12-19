@@ -1,0 +1,9 @@
+<h1>login</h1>
+  <form class="login-form">
+      <div class="container">
+      <input [(ngModel)]="username" name="username" type="text" placeholder="username"/><br/>
+      <input [(ngModel)]="password" name="password" type="password" placeholder="password"/><br/>
+      <button (click)="login()">login</button>
+     <div *ngIf="loginResponse">Token Response: {{loginResponse}}</div>
+      </div>
+    </form>

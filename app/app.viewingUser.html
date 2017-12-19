@@ -1,0 +1,21 @@
+<h1>Get Users</h1>
+<form class="login-form">
+      <div class="container">     
+      <button (click)="getUsers()">Get Users</button>
+     <div *ngIf="allUsersBulkResponse">All Users Response: {{allUsersBulkResponse}}</div>
+      </div>
+</form>
+
+<form class="login-form">
+  <h1>Get Users By Name</h1>
+      <div class="container">  
+      <input [(ngModel)]="searchUserName" name="name" type="text" placeholder="name"/><br/>   
+      <button (click)="getUserByName(searchUserName)">Get Users By Name</button>
+     <div *ngIf="allUsersBulkResponse">All Users Response: {{allUsersBulkResponse}}</div>
+      </div>
+      <div>
+        
+      </div>
+
+    </form>
+  

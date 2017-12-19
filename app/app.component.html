@@ -1,0 +1,14 @@
+
+<ul class="nav nav-tabs">
+<li role="presentation" class="active"><a *ngIf="!remoteService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a></li>
+<li role="presentation" ><a *ngIf="!remoteService.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a></li>
+<li role="presentation" ><a *ngIf="!remoteService.loggedIn()"  routerLink="/profile" routerLinkActive="active">Profile</a></li>
+<li role="presentation" ><a *ngIf="!remoteService.loggedIn()" routerLink="/viewingUser" routerLinkActive="active">View User</a></li>
+<li role="presentation" ><a *ngIf="!remoteService.loggedIn()" routerLink="/role" routerLinkActive="active">Assign Role</a></li>
+<li role="presentation" ><a *ngIf="!remoteService.loggedIn()"  (click)="logout()">Logout</a></li>
+</ul>
+
+<div>
+<router-outlet></router-outlet>
+</div>
+

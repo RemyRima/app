@@ -1,0 +1,12 @@
+<h1>Change Password</h1>
+  <form class="login-form">
+      <div class="container">
+      <input [(ngModel)]="ch_oldPwd" name="password" type="password" placeholder="Old Password"/><br/>
+      <input [(ngModel)]="ch_newPwd" name="newPassword" type="password" placeholder="New Password"/><br/>
+      <input [(ngModel)]="password" name="confirmPassword"type="password" placeholder="Confirm Password"/><br/>
+      <input [(ngModel)]="ch_confirmPassword" name ="confirmPassword2"type="password" placeholder="Confirm Password"/><br/>
+      <button (click)="changePassword()">Submit</button>
+     <div *ngIf="bulkPasswordChangeResponse">token: {{token}}<br/>{{bulkUserData}}</div>
+      </div>
+    </form>
+
